@@ -29,10 +29,12 @@
 ## Kaggle_Cat&Dog
 - 本项目是kaggle中的入门级项目，本篇博文采用**Keras+CNN**网络模型完成该项目。
 - kaggle的项目地址：[链接](https://www.kaggle.com/c/dogs-vs-cats/overview)
+- kaggle_NoteBook: [notebook地址](https://www.kaggle.com/yearing1017/keras-cnn)
 - 详细博文地址：[kaggle_Cat&Dog](https://yearing1017.site/2019/11/18/Kaggle-Cat-Dog/)
 
 ## Kaggle_Cat&Dog_TransferLearning
 - 本项目是kaggle中的入门级项目，本实验采用**Keras+InceptionV3**网络模型完成该项目。
 - 本实验采用了迁移学习的思想，借助已有的网络模型，不进行训练而直接进行识别任务。
 - kaggle的项目地址：[链接](https://www.kaggle.com/c/dogs-vs-cats/overview)
+- kaggle_NoteBook: [notebook地址](https://www.kaggle.com/yearing1017/dogs-vs-cats-inceptionv3-fine-tuning)
 - 详细博文地址：[kaggle_Cat&Dog_迁移学习](https://yearing1017.site/2019/11/19/Kaggle-Cat-Dog-%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/)
