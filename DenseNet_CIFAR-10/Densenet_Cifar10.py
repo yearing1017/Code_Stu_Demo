@@ -10,7 +10,7 @@ growth_k = 24
 nb_block = 2 # how many (dense block + Transition Layer) ?
 init_learning_rate = 1e-4
 epsilon = 1e-4 # AdamOptimizer epsilon
-dropout_rate = 0.2
+dropout_rate = 0.3
 
 # Momentum Optimizer will use
 nesterov_momentum = 0.9
@@ -248,7 +248,7 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 saver = tf.train.Saver(tf.global_variables())
 
-'''
+
 # 开启训练
 with tf.Session() as sess:
     ckpt = tf.train.get_checkpoint_state('./model')
@@ -320,9 +320,9 @@ with tf.Session() as sess:
 
         # 每一轮都save一下model
         saver.save(sess=sess, save_path='./model/dense.ckpt')
+
+
 '''
-
-
 # 测试部分
 
 def Evaluate_test(sess):
@@ -360,3 +360,4 @@ with tf.Session() as sess:
         test_acc, test_loss = Evaluate_test(sess)
         line = "test_loss: %.4f, test_acc: %.4f \n" % (test_loss, test_acc)
         print(line)
+'''
