@@ -6,6 +6,7 @@
 - cifar10.py为数据处理文件
 - Densenet_Cifar10.py为主程序，运行即可
 - 未解决小bug：cifar10.py文件中，在解压部分，可能会报”不是gzip文件“，可手动解压即可
+- 博文地址：[DenseNet_CIFAR-10](https://yearing1017.site/2019/11/28/DenseNet-CIFAR-10/)
 
 ## ResNet50_CIFAR-10
 - 在学习了ResNet的基本结构和思想之后，使用**ResNet50+TensorFlow+CIAFR-10**来深入学习网络结构。
@@ -38,3 +39,28 @@
 - kaggle的项目地址：[链接](https://www.kaggle.com/c/dogs-vs-cats/overview)
 - kaggle_NoteBook: [notebook地址](https://www.kaggle.com/yearing1017/dogs-vs-cats-inceptionv3-fine-tuning)
 - 详细博文地址：[kaggle_Cat&Dog_迁移学习](https://yearing1017.site/2019/11/19/Kaggle-Cat-Dog-%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/)
+
+## Pytorch_FCN
+- 一个语义分割（基于FCN）的简单demo
+- pytorch框架实现，具体所需环境如下
+  - CUDA 9.x （可选）
+  - numpy、os、datetime、matplotlib
+  - pytorch 1.0
+  - torchvision
+  - visdom  可视化工具
+  - OpenCV-Python
+- 具体环境搭建步骤见[博文](#博文)
+- 本实验分为数据处理、网络搭建、训练部分
+- 数据集分为data和data_mask部分，即一个为原始数据，一个为标注好的ground_truth
+- 文件全都在上面Pytorch_FCN文件夹中
+
+
+
+
+
+
+
+
+
+
+
