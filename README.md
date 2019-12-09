@@ -54,8 +54,14 @@
 - 数据集分为data和data_mask部分，即一个为原始数据，一个为标注好的ground_truth
 - 文件全都在上面Pytorch_FCN文件夹中
 
-
-
+## Pytorch_UNet
+- 将FCN实验网络结构改为UNet进行测试效果
+- 搭建了Unet网络，并进行了层次的封装
+- 修改train.py,解决了没有预料到的小错误
+- 错误1：详见[Pytorch_已解决问题_1](https://github.com/yearing1017/PyTorch_Note)
+- 错误2：在执行`loss = criterion(output, bag_msk)`语句时，提示两者大小不同，output比预设的label小
+  - 发现是因为在unet的卷积操作中没有添加padding，令padding=1，打印一下，两者相同。程序可运行
+- 在执行20轮之后，与FCN的效果进行比较
 
 
 
