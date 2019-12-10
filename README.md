@@ -62,11 +62,17 @@
 - 错误2：在执行`loss = criterion(output, bag_msk)`语句时，提示两者大小不同，output比预设的label小
   - 发现是因为在unet的卷积操作中没有添加padding，令padding=1，打印一下，两者相同。程序可运行
 - 在执行20轮之后，与FCN的效果进行比较
+- 下图为FCN的打印loss信息和可视化结果：
+
+![fcn_res20](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/fcn_res20.jpg)
+
+![fcn20](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/fcn_20.jpg)
 
 
+- 下图为UNet的20轮之后的loss信息和可视化结果：
 
+![unet_res20](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/unet_res.jpg)
 
+![unet20](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/unet_20.jpg- )
 
-
-
-
+- 对比两次实验结果，发现UNet的训练损失减少了3个百分点，测试损失减少了5个百分点，在可视化结果上，UNet表现更好
