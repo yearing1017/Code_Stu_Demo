@@ -57,6 +57,7 @@
 ## Pytorch_UNet
 - 将FCN实验网络结构改为UNet进行测试效果
 - 搭建了Unet网络，并进行了层次的封装
+- 代码：[UNet.py](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/UNet.py)、[train_unet.py](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/train_unet.py)
 - 修改train.py,解决了没有预料到的小错误
 - 错误1：详见[Pytorch_已解决问题_1](https://github.com/yearing1017/PyTorch_Note)
 - 错误2：在执行`loss = criterion(output, bag_msk)`语句时，提示两者大小不同，output比预设的label小
