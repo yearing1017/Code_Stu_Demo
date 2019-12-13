@@ -74,6 +74,6 @@
 
 ![unet_res20](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/unet_res.jpg)
 
-![unet20](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/unet_20.jpg- )
+![unet20](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/unet_20.jpg)
 
 - 对比两次实验结果，发现UNet的训练损失减少了3个百分点，测试损失减少了5个百分点，在可视化结果上，UNet表现更好
