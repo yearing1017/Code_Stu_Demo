@@ -49,7 +49,7 @@
   - torchvision
   - visdom  可视化工具
   - OpenCV-Python
-- 具体环境搭建步骤见[博文](#博文)
+- 具体环境搭建步骤见[博文](https://yearing1017.site/2019/12/03/FCN-Pytorch/)
 - 本实验分为数据处理、网络搭建、训练部分
 - 数据集分为data和data_mask部分，即一个为原始数据，一个为标注好的ground_truth
 - 文件全都在上面Pytorch_FCN文件夹中
