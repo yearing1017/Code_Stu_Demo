@@ -79,9 +79,10 @@
 - 对比两次实验结果，发现UNet的训练损失减少了3个百分点，测试损失减少了5个百分点，在可视化结果上，UNet表现更好
 
 ## 💡 UNet_Lungs_Pytorch
-- 本次实验数据来自Kaggle的竞赛题目：[Finding and Measuring Lungs in CT Data](https://www.kaggle.com/kmader/finding-lungs-in-ct-data),只用到了2D的数据，所以仅下载2D的数据即可，解压至项目根目录/Dataset/
+- 本次实验数据来自Kaggle的竞赛题目：[Finding and Measuring Lungs in CT Data](https://www.kaggle.com/kmader/finding-lungs-in-ct-data)
+- 实验只用到了2D的数据，所以仅下载2D的数据即可，解压至项目根目录/Dataset/
 - dataset.py,onehot.py：数据处理部分
 - model.py：UNet模型搭建部分
 - train.py：训练部分，自行修改epoch数目，本次仅训练15次
 - 可视化结果如下：
-<img src="" style=""/>
+<img src="https://github.com/yearing1017/DL_Stu_Demo/blob/master/UNet_Lungs_Pytorch/epoch15.png" style="zoom:50%"/>
