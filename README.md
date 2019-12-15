@@ -1,6 +1,6 @@
 # DL_Stu_Demo
 ⏰**记录自己做过的一些DL实验**
-## DenseNet_CIFAR-10
+## 💡 DenseNet_CIFAR-10
 - 该项目完整文件如上
 - 本实验测试了DenseNet网络模型在CIFAR-10数据集上的表现
 - cifar10.py为数据处理文件
@@ -8,7 +8,7 @@
 - 未解决小bug：cifar10.py文件中，在解压部分，可能会报”不是gzip文件“，可手动解压即可
 - 博文地址：[DenseNet_CIFAR-10](https://yearing1017.site/2019/11/28/DenseNet-CIFAR-10/)
 
-## ResNet50_CIFAR-10
+## 💡 ResNet50_CIFAR-10
 - 在学习了ResNet的基本结构和思想之后，使用**ResNet50+TensorFlow+CIAFR-10**来深入学习网络结构。
 - 该项目所使用的环境如下：
   - **Python3.6+TensorFlow1.13+numpy1.16**
@@ -19,7 +19,7 @@
   - CIFARHelper.py：对CIFAR10数据集进行一些特定的处理，及加载数据等功能
   - Main.py：主函数，结合上述文件，使用残差网络对数据集进行训练
 
-## Tensorflow_Discuz_验证码识别
+## 💡 Tensorflow_Discuz_验证码识别
 使用深度学习框架Tensorflow训练出一个用于破解Discuz验证码的模型
 - 环境：**GTX1080的显卡，GPU，安装tensorflow_gpu版本，CUDA，CUDNN**。
 - 运行train.py即可训练完模型
@@ -27,20 +27,20 @@
 - Discuz验证码数据集下载地址：
   - [链接](https://pan.baidu.com/s/10TzEvjToYjOgzlOpIgx1tg&shfl=sharepset)  密码:6qto
   
-## Kaggle_Cat&Dog
+## 💡 Kaggle_Cat&Dog
 - 本项目是kaggle中的入门级项目，本篇博文采用**Keras+CNN**网络模型完成该项目。
 - kaggle的项目地址：[链接](https://www.kaggle.com/c/dogs-vs-cats/overview)
 - kaggle_NoteBook: [notebook地址](https://www.kaggle.com/yearing1017/keras-cnn)
 - 详细博文地址：[kaggle_Cat&Dog](https://yearing1017.site/2019/11/18/Kaggle-Cat-Dog/)
 
-## Kaggle_Cat&Dog_TransferLearning
+## 💡 Kaggle_Cat&Dog_TransferLearning
 - 本项目是kaggle中的入门级项目，本实验采用**Keras+InceptionV3**网络模型完成该项目。
 - 本实验采用了迁移学习的思想，借助已有的网络模型，不进行训练而直接进行识别任务。
 - kaggle的项目地址：[链接](https://www.kaggle.com/c/dogs-vs-cats/overview)
 - kaggle_NoteBook: [notebook地址](https://www.kaggle.com/yearing1017/dogs-vs-cats-inceptionv3-fine-tuning)
 - 详细博文地址：[kaggle_Cat&Dog_迁移学习](https://yearing1017.site/2019/11/19/Kaggle-Cat-Dog-%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/)
 
-## Pytorch_FCN
+## 💡 Pytorch_FCN
 - 一个语义分割（基于FCN）的简单demo
 - pytorch框架实现，具体所需环境如下
   - CUDA 9.x （可选）
@@ -54,7 +54,7 @@
 - 数据集分为data和data_mask部分，即一个为原始数据，一个为标注好的ground_truth
 - 文件全都在上面Pytorch_FCN文件夹中
 
-## Pytorch_UNet
+## 💡 Pytorch_UNet
 - 将FCN实验网络结构改为UNet进行测试效果
 - 搭建了Unet网络，并进行了层次的封装
 - 代码：[UNet.py](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/UNet.py)、[train_unet.py](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/train_unet.py)
@@ -65,9 +65,9 @@
 - 在执行20轮之后，与FCN的效果进行比较
 - 下图为FCN的打印loss信息和可视化结果：
 
-![fcn_res20](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/fcn_res20.jpg)
+<img src="https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/fcn_res20.jpg"  style="zoom: 50%;" />
 
-![fcn20](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/fcn_20.jpg)
+<img src="https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/fcn_20.jpg" style="zoom: 50%" />
 
 
 - 下图为UNet的20轮之后的loss信息和可视化结果：
@@ -77,3 +77,11 @@
 ![unet20](https://github.com/yearing1017/DL_Stu_Demo/blob/master/Pytorch_FCN/result/unet_20.jpg)
 
 - 对比两次实验结果，发现UNet的训练损失减少了3个百分点，测试损失减少了5个百分点，在可视化结果上，UNet表现更好
+
+## 💡 UNet_Lungs_Pytorch
+- 本次实验数据来自Kaggle的竞赛题目：[Finding and Measuring Lungs in CT Data](https://www.kaggle.com/kmader/finding-lungs-in-ct-data),只用到了2D的数据，所以仅下载2D的数据即可，解压至项目根目录/Dataset/
+- dataset.py,onehot.py：数据处理部分
+- model.py：UNet模型搭建部分
+- train.py：训练部分，自行修改epoch数目，本次仅训练15次
+- 可视化结果如下：
+<img src="" style=""/>
